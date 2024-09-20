@@ -1,4 +1,7 @@
-﻿namespace DataModel.InterfaceRepositories
+﻿using System.Linq;
+using System.Threading.Tasks;
+
+namespace DataModel.InterfaceRepositories
 {
     public interface IRepositoryBase<T> where T : class
     {

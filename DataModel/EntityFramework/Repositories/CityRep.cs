@@ -2,6 +2,8 @@
 using DataModel.EntityFramework.Contexts;
 using DataModel.InterfaceRepositories;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DataModel.EntityFramework.Repositories
 {

@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox VerticalAlignment="Top" Margin="10" Grid.Column="0"
+                  x:Name="CmbCity" SelectionChanged="CmbCity_SelectionChanged"
+                  SelectedItem="{Binding Path=SelectRowCity, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"
+                  ItemsSource="{Binding Path=Cities, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
 </Window>
